@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html>
   <head>
     <meta charset="utf-8">
@@ -17,17 +18,21 @@
     
     
     <div id="js-quiz-start-page">
-    <p>Test your knowledge of global cuisine!</p>
+    <p>Want to test your knowledge of global cuisine?</p>
       <button id="js-start-button">Click to begin</button>
     </div>
     
     
     
   
-    <div class="quizcontainer">
+    <div id="quizcontainer" class="hidden">
       <section id="js-quiz-section">
+        <div id="js-question-tracker">
+          <div id="js-page-text"></div>
+        </div>
         <h2 class="js-quiz-question"></h2>
        <form id="js-quiz-form">
+         <div id="js-responses"></div>
         
          <button id="js-submit-button" type="submit">Submit Answer</button>
       </form> 
@@ -35,11 +40,9 @@
       
     </div>
 
-    <div class="js-quiz-feedback"></div>
+    <div id="js-quiz-feedback" class="hidden"></div>
     
-    <div class="js-quiz-tally"></div>
-    
-    <div class="js-quiz-reset">
+    <div id="js-quiz-reset" class="hidden">
       <button id="js-quiz-reset-button">Reset Quiz</button>
     </div>
    
